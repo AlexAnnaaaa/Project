@@ -12,6 +12,11 @@
   gap: 37px;
 }
 
+.students_card{
+  position: relative;
+  width: 210px;
+}
+
 .students_card_img{
   width: 200px;
   height: 270px;
@@ -20,8 +25,7 @@
 
 .student-name{
   font-family: 'Roboto', sans-serif;
-  position: absolute;
-  top: 455px;
+  top: 600px;
   font-size: 20px;
   text-align: center;
 }
@@ -30,3 +34,18 @@
   background: aqua;
 }
 
+.new-student{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background: #3AA828;
+  color: #FFFFFF;
+  padding: 2px 6px 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  left: 118px;
+}

@@ -6,16 +6,28 @@
 // 1.4 Кнопка войти
 // 2. Написать логику для показа поп-ап по нажатию "войти"
 
-let loginButton = document.querySelector('.button');
-let loginPopUp = document.querySelector('.login-popup');
+const loginButton = document.querySelector('.button');
+const loginPopUp = document.querySelector('.login-popup');
+const closeButton = document.querySelector('.popup-close');
 
 console.log(loginButton);
 console.log(loginPopUp);
 
 loginButton.addEventListener('click', showPopUP)
+closeButton.addEventListener('click', close)
 
 function showPopUP(evt) {
   console.log(evt);
   evt.preventDefault();
   loginPopUp.classList.toggle('show-popup')
 };
+
+function close() {
+  loginPopUp.classList.remove('show-popup')
+};
+
+loginPopUp.addEventListener(`click`, (e) => {
+  if(e.target.classList.contains(`show-popup`)){
+    close();
+  }
+})

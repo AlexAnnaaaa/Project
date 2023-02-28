@@ -58,7 +58,18 @@ span{
   color: #646464;
 }
 
+.ems{
+  color: #646464;
+}
+
 @media screen and (max-width: 1140px) {
+  .main{
+    box-sizing: border-box;
+    padding: 0 2vw;
+  }
+  .header{
+    justify-content: center;
+  }
   .main-inner{
     padding: 20px 0 0 0;
     width: 90%;
